@@ -59,11 +59,21 @@
                     <option value="thin">Thin Crust</option>
                 </select><br>
 
-                <label for=""></label>
-
+                <label for="ordertype">Order type:</label><br>
+                <select name="ordertype" id="ordertype"><br>
+                    <option value="delivery">Delivery</option>
+                    <option value="take-out">Take out</option>
+                    <option value="eat-in">Eat-in</option>
+                </select>
             </fieldset>
             <fieldset>
                 <legend>Personal information</legend>
+                <label for="fname">Full name:</label>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address"><br>
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone"><br>
             </fieldset>
             <input type="reset" value="Reset">
             <input type="submit" value="Place order">
