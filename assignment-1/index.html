@@ -22,11 +22,11 @@
 
                 <label for="spizzas">Size:</label><br>
                 <select name="spizzas" id="spizzas">
-                    <option value="small">Small: 6 slides</option>
-                    <option value="medium">Medium: 8 slides</option>
-                    <option value="large">Large: 10 slides</option>
-                    <option value="family">Family: 12 slides</option>
-                    <option value="party">Party: 16 slides</option>
+                    <option value="small">Small: 6 slices</option>
+                    <option value="medium">Medium: 8 slices</option>
+                    <option value="large">Large: 10 slices</option>
+                    <option value="family">Family: 12 slices</option>
+                    <option value="party">Party: 16 slices</option>
                 </select><br>
 
                 <label for="shpizzas">Shape:</label><br>
@@ -61,11 +61,19 @@
                 </select><br>
 
                 <label for="ordertype">Order type:</label><br>
-                <select name="ordertype" id="ordertype"><br>
+                <select name="ordertype" id="ordertype">
                     <option value="delivery">Delivery</option>
                     <option value="take-out">Take out</option>
                     <option value="eat-in">Eat-in</option>
-                </select>
+                </select><br>
+
+                <label for="payment">Payment method:</label><br>
+                <input type="radio" id="cash" name="payment" value="cash">
+                <label for="cash">Cash</label><br>
+                <input type="radio" id="credit" name="payment" value="credit">
+                <label for="credit">Credit Card</label><br>
+                <input type="radio" id="debit" name="payment" value="debit">
+                <label for="debit">Debit Card</label><br>
             </fieldset>
             <fieldset>
                 <legend>Personal information</legend>
@@ -73,6 +81,8 @@
                 <input type="text" id="fname" name="fname"><br>
                 <label for="address">Address:</label>
                 <input type="text" id="address" name="address"><br>
+                <label for="comments">Special instructions:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
                 <label for="phone">Phone number:</label>
                 <input type="tel" id="phone" name="phone"><br>
                 <label for="email">Email:</label>
