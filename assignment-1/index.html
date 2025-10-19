@@ -3,29 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico"> <!-- Set website's icon -->
+    <link rel="stylesheet" href="style.css"> <!-- Link css styles -->
     <title>Matthew's Pizzas</title>
 </head>
 <body>
     <header>
+        <!-- Header banner -->
         <img src="img/komisan.jpg" alt="Shouko Komi Picture" height="180px" width="180px">
         <!-- Drawing made by Tomohito Oda and edited by GPT-5 -->
         <h1>Matthew's Pizzas</h1>
     </header>
     <main>
+        <!-- Order form -->
         <form action="confirmation.html" method="get">
+            <!-- Welcome message -->
             <p id="welcome">
                 <img src="img/pizza-icon.gif" alt="Pizza Picture" height="30px">
                 <!-- Free to use image: https://www.pngkey.com/detail/u2a9o0y3y3r5r5t4_drawing-pizza-slice-free-image-picture-freeuse-stock/ -->
                 Welcome to Matthew's Pizzas! Fill out the form below to order your delicious pizza.
             </p>
+            <!-- Order details section -->
             <fieldset>
                 <legend>Order details</legend>
 
+                <!-- Number of pizzas -->
                 <label for="npizzas">Number of pizzas:</label><br>
                 <input type="number" name="npizzas" id="npizzas" min="1" max="10" value="1" required><br>
 
+                <!-- Pizza size -->
                 <label for="spizzas">Size:</label><br>
                 <select name="spizzas" id="spizzas" required>
                     <option value="small">Small: 6 slices</option>
@@ -35,14 +41,16 @@
                     <option value="party">Party: 16 slices</option>
                 </select><br>
 
+                <!-- Pizza's shape -->
                 <label for="shpizzas">Shape:</label><br>
                 <select name="shpizzas" id="shpizzas" required>
                     <option value="round">Round</option>
                     <option value="square">Square</option>
                 </select><br>
 
+                <!-- Pizza toppings -->
                 <label for="tpizzas">Toppings:</label><br>
-
+                <!-- Pizza topping options -->
                 <input type="checkbox" id="topping1" name="topping1" value="Pepperoni">
                 <label for="topping1">Pepperoni</label><br>
                 <input type="checkbox" id="topping2" name="topping2" value="Ham">
@@ -58,6 +66,7 @@
                 <input type="checkbox" id="topping7" name="topping7" value="Parmesan">
                 <label for="topping7">Parmesan</label><br>
 
+                <!-- Pizza's crust type -->
                 <label for="cpizza">Crust type:</label><br>
                 <select name="cpizza" id="cpizza" required>
                     <option value="classic">Classic Crust</option>
@@ -66,6 +75,7 @@
                     <option value="thin">Thin Crust</option>
                 </select><br>
 
+                <!-- Order type -->
                 <label for="ordertype">Order type:</label><br>
                 <select name="ordertype" id="ordertype" required>
                     <option value="delivery">Delivery</option>
@@ -73,6 +83,7 @@
                     <option value="eat-in">Eat-in</option>
                 </select><br>
 
+                <!-- Payment methods -->
                 <label for="payment">Payment method:</label><br>
                 <input type="radio" id="cash" name="payment" value="cash" required>
                 <label for="cash">Cash</label><br>
@@ -81,25 +92,28 @@
                 <input type="radio" id="debit" name="payment" value="debit" required>
                 <label for="debit">Debit Card</label><br>
             </fieldset>
+            <!-- Personal information section -->
             <fieldset>
-                <legend>Personal information</legend>
-                <label for="fname">Full name:</label>
+                <legend>Personal information</legend> 
+                <label for="fname">Full name:</label> <!-- Name -->
                 <input type="text" id="fname" name="fname" required><br>
-                <label for="address">Address:</label>
+                <label for="address">Address:</label> <!-- Address -->
                 <input type="text" id="address" name="address" required><br>
-                <label for="comments">Special instructions:</label><br>
+                <label for="comments">Special instructions:</label><br> <!-- Delivery instructions -->
                 <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
-                <label for="phone">Phone number:</label>
+                <label for="phone">Phone number:</label> <!-- Phone number -->
                 <input type="tel" id="phone" name="phone" required><br>
-                <label for="email">Email:</label>
+                <label for="email">Email:</label> <!-- Email address -->
                 <input type="email" id="email" name="email" required>
             </fieldset>
+            <!-- Form footer options -->
             <input type="reset" value="Reset">
             <input type="submit" value="Place order">
         </form>
     </main>
     <footer>
         <p>
+            <!-- Copyright -->
             <small>© 2025 Matthew's Pizzas, All rights reserved.</small>
         </p>
     </footer>
