@@ -18,10 +18,10 @@
                 <legend>Order details</legend>
 
                 <label for="npizzas">Number of pizzas:</label><br>
-                <input type="number" name="npizzas" id="npizzas" min="1" max="10" value="1"><br>
+                <input type="number" name="npizzas" id="npizzas" min="1" max="10" value="1" required><br>
 
                 <label for="spizzas">Size:</label><br>
-                <select name="spizzas" id="spizzas">
+                <select name="spizzas" id="spizzas" required>
                     <option value="small">Small: 6 slices</option>
                     <option value="medium">Medium: 8 slices</option>
                     <option value="large">Large: 10 slices</option>
@@ -30,7 +30,7 @@
                 </select><br>
 
                 <label for="shpizzas">Shape:</label><br>
-                <select name="shpizzas" id="shpizzas">
+                <select name="shpizzas" id="shpizzas" required>
                     <option value="round">Round</option>
                     <option value="square">Square</option>
                 </select><br>
@@ -53,7 +53,7 @@
                 <label for="topping7">Parmesan</label><br>
 
                 <label for="cpizza">Crust type:</label><br>
-                <select name="cpizza" id="cpizza">
+                <select name="cpizza" id="cpizza" required>
                     <option value="classic">Classic Crust</option>
                     <option value="cheese">Cheese-topped Crust</option>
                     <option value="thick">Thick Crust</option>
@@ -61,32 +61,32 @@
                 </select><br>
 
                 <label for="ordertype">Order type:</label><br>
-                <select name="ordertype" id="ordertype">
+                <select name="ordertype" id="ordertype" required>
                     <option value="delivery">Delivery</option>
                     <option value="take-out">Take out</option>
                     <option value="eat-in">Eat-in</option>
                 </select><br>
 
                 <label for="payment">Payment method:</label><br>
-                <input type="radio" id="cash" name="payment" value="cash">
+                <input type="radio" id="cash" name="payment" value="cash" required>
                 <label for="cash">Cash</label><br>
-                <input type="radio" id="credit" name="payment" value="credit">
+                <input type="radio" id="credit" name="payment" value="credit" required>
                 <label for="credit">Credit Card</label><br>
-                <input type="radio" id="debit" name="payment" value="debit">
+                <input type="radio" id="debit" name="payment" value="debit" required>
                 <label for="debit">Debit Card</label><br>
             </fieldset>
             <fieldset>
                 <legend>Personal information</legend>
                 <label for="fname">Full name:</label>
-                <input type="text" id="fname" name="fname"><br>
+                <input type="text" id="fname" name="fname" required><br>
                 <label for="address">Address:</label>
-                <input type="text" id="address" name="address"><br>
+                <input type="text" id="address" name="address" required><br>
                 <label for="comments">Special instructions:</label><br>
                 <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
                 <label for="phone">Phone number:</label>
-                <input type="tel" id="phone" name="phone"><br>
+                <input type="tel" id="phone" name="phone" required><br>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
             </fieldset>
             <input type="reset" value="Reset">
             <input type="submit" value="Place order">
