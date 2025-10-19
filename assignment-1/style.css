@@ -69,6 +69,14 @@ main a:hover {
     text-decoration: underline;
 }
 
+/* center welcome message text */
+#welcome {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
 /* change form's background color */
 form {
     background-color: transparent;
