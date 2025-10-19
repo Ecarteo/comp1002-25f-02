@@ -13,9 +13,16 @@
     <main>
         <form action="">
             <label for="npizzas">Number of pizzas:</label><br>
-            <input type="text"><br>
+            <input type="number" name="npizzas" id="npizzas" min="1" max="10" value="1"><br>
             <label for="spizzas">Size:</label><br>
-            <input type="text"><br>
+            <select name="spizzas" id="spizzas">
+                <option value="small">Small: 6 slides</option>
+                <option value="medium">Medium: 8 slides</option>
+                <option value="large">Large: 10 slides</option>
+                <option value="family">Family: 12 slides</option>
+                <option value="party">Party: 16 slides</option>
+            </select>
+            
             <input type="submit">
         </form>
     </main>
