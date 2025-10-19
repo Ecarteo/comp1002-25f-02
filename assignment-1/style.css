@@ -1,0 +1,32 @@
+/* set a font to all the files */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #d4a574;
+    margin: 0;
+    padding: 0;
+}
+
+/* center the header and give some styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/* give header some styling */
+header h1 {
+    color: #c92a2a;
+    font-size: 3em;
+    margin: 0;
+}
+
+main {
+    padding: 0 20px 20px 20px;
+}
