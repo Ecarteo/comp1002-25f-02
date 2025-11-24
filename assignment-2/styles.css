@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "SailorMoonFont";
+    /* Keep your source valid */
+    src: url("font/Science_Gothic/ScienceGothic-VariableFont_CTRS.ttf");
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.poster-canvas {
+    background-image: url("img/textless-background.jpg"); 
+    background-size: cover;
+    background-position: center; 
+    width: 600px;
+    height: 850px;
+    /* Standard centering */
+    margin: 20px auto; 
+    border: 1px solid #333;
+    /* Standard box shadow */
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    position: relative; 
+    font-family: "SailorMoonFont", sans-serif;
+    color: white;
+    /* box-sizing is good practice, keep it */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.top-left-group {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: left;
+    width: 200px;
+}
+
+.producer-info {
+    display: flex;
+    align-items: center;
+    /* Removed 'gap', used margin on the image instead - very beginner style */
+    margin-bottom: 20px;
+}
+
+.producers-logo {
+    width: 40px;
+    height: auto;
+    /* Replaced advanced 'filter' with a simple margin for spacing */
+    margin-right: 10px;
+}
+
+.producer-info p {
+    font-size: 12px; /* Changed rem to px - beginners often stick to px first */
+    margin: 0;
+    text-shadow: 2px 2px 2px black;
+    line-height: 1.2;
+}
+
+.movie-synopsis h3 {
+    display: none;
+}
+
+.movie-synopsis p {
+    font-size: 14px;
+    line-height: 1.3;
+    text-shadow: 2px 2px 3px black; /* Simplified color to basic black */
+    margin: 0;
+    color: #eee;
+    background-color: rgba(0,0,0,0.5); /* Increased opacity slightly for readability */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.character-list {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 150px;
+    text-align: right;
+}
+
+.character-list h3 {
+    display: none;
+}
+
+.character-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.character-list li {
+    font-size: 14px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.movie-title {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.movie-title h1 {
+    font-size: 72px; /* Switched back to px */
+    margin: 0;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 900; 
+    font-style: italic;
+    
+    /* REPLACED THE COMPLEX GRADIENT WITH STANDARD COLORS */
+    color: #ffcc00; /* Basic Gold color */
+    text-shadow: 4px 4px 0px #1a0c4a; 
+}
+
+.movie-title h2 {
+    font-size: 40px;
+    margin: 0;
+    color: #ff3399; 
+    font-style: italic;
+    
+    /* REPLACED COMPLEX STROKE WITH BASIC SHADOW */
+    text-shadow: 2px 2px 0px black;
+    
+    position: relative;
+    top: -5px;
+    /* Centering via left/margin is common for beginners struggling with alignment */
+    left: 40px; 
+}
+
+.reference-section {
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.reference-section figure {
+    margin: 0;
+}
+
+footer {
+    padding-bottom: 50px;
+    color: #333;
+}
