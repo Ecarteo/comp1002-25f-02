@@ -11,7 +11,7 @@ body {
 }
 
 .poster-canvas {
-    background-image: url("../img/textless-background.jpg"); 
+    background-image: url("../img/textless-bg.jpg"); 
     background-size: cover;
     background-position: center; 
     width: 600px;
